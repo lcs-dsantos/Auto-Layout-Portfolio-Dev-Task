@@ -6,7 +6,9 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,34 +25,41 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
                                 <color key="backgroundColor" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-Tl-zEx" userLabel="Green View">
-                                <rect key="frame" x="125" y="209" width="126" height="248"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xth-Tl-zEx" userLabel="Green View">
+                                <rect key="frame" x="125" y="209" width="125" height="248"/>
                                 <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzS-78-RSg" userLabel="Black View">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pzS-78-RSg" userLabel="Black View">
                                 <rect key="frame" x="250" y="209" width="125" height="248"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AnV-fS-Chr" userLabel="Brown View">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AnV-fS-Chr" userLabel="Brown View">
                                 <rect key="frame" x="0.0" y="457" width="375" height="210"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.57874745130000005" green="0.32151988149999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-bj-oT3" userLabel="Red View">
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iXN-bj-oT3" userLabel="Red View">
                                 <rect key="frame" x="0.0" y="209" width="125" height="248"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="miO-jK-Pqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BGt-yP-xe0"/>
-                            <constraint firstItem="miO-jK-Pqk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="375:667" id="bHZ-7G-jQx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="miO-jK-Pqk" secondAttribute="trailing" id="dWP-Pa-phz"/>
-                            <constraint firstItem="miO-jK-Pqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gsq-LQ-cnT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="miO-jK-Pqk" secondAttribute="top" constant="20" id="qUb-0p-aVh"/>
+                            <constraint firstItem="iXN-bj-oT3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="125:667" id="0Bi-ed-qr1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="miO-jK-Pqk" secondAttribute="top" constant="20" id="4qc-B5-Mmr"/>
+                            <constraint firstItem="AnV-fS-Chr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-16" id="5qY-1C-z9b"/>
+                            <constraint firstItem="AnV-fS-Chr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="7fQ-Ou-3uA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AnV-fS-Chr" secondAttribute="trailing" constant="-16" id="AnS-IL-x3V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AnV-fS-Chr" secondAttribute="bottom" id="C9c-YM-POr"/>
+                            <constraint firstItem="miO-jK-Pqk" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="375:667" id="GDl-eU-bMk"/>
+                            <constraint firstItem="pzS-78-RSg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="125:667" id="LyU-jl-1gr"/>
+                            <constraint firstItem="iXN-bj-oT3" firstAttribute="top" secondItem="miO-jK-Pqk" secondAttribute="top" constant="209" id="MJ3-S9-43C"/>
+                            <constraint firstItem="Xth-Tl-zEx" firstAttribute="top" secondItem="miO-jK-Pqk" secondAttribute="top" constant="209" id="NNg-SD-np0"/>
+                            <constraint firstItem="AnV-fS-Chr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerXWithinMargins" id="VcJ-P1-hJL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="miO-jK-Pqk" secondAttribute="trailing" id="dwO-hb-Mld"/>
+                            <constraint firstItem="pzS-78-RSg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="189" id="lFM-oN-g0d"/>
+                            <constraint firstItem="miO-jK-Pqk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="shM-fG-WX5"/>
+                            <constraint firstItem="AnV-fS-Chr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="1:1" id="uei-LN-mJo"/>
+                            <constraint firstItem="miO-jK-Pqk" firstAttribute="trailing" secondItem="pzS-78-RSg" secondAttribute="trailing" id="wXJ-Ib-2sl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
